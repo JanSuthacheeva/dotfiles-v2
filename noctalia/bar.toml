@@ -1,0 +1,56 @@
+[bar]
+order = ["main"]
+
+[bar.default]
+position                  = "top"
+enabled                   = true
+auto_hide                 = false
+smart_auto_hide           = false
+show_on_workspace_switch  = true
+reserve_space             = true
+layer                     = "top"
+
+thickness                 = 25
+background_opacity        = 1.0
+border                    = "outline"
+border_width              = 0.0
+shadow                    = true
+contact_shadow            = false
+panel_overlap             = 1
+radius                    = 0
+margin_ends               = 0
+margin_edge               = 0
+margin_opposite_edge      = 0
+padding                   = 14
+widget_spacing            = 8
+hover_highlight           = true
+scale                     = 1.0
+font_scale                = 0.8
+font_weight               = 500
+font_family               = ""
+
+
+capsule                   = false
+capsule_fill              = "surface_variant"
+capsule_thickness         = 0.76
+capsule_radius            = 8.0
+capsule_opacity           = 1.0
+
+
+start   = ["session", "workspaces"]
+center  = ["caffeine", "clock"]
+end     = ["jrohland/claudecode:pill", "tray", "notifications", "clipboard", "network", "bluetooth", "volume", "battery", "wallpaper"]
+
+[widget.workspaces]
+style = "regular"
+show_icons = false
+show_labels = false
+pill_scale = 0.5
+active_pill_size = 1.0
+
+[widget.caffeine]
+scale = 0.6
+
+[widget.network]
+show_label            = false
+

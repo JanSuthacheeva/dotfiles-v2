@@ -1,0 +1,24 @@
+[theme]
+mode              = "dark"        # dark | light | auto
+shell_mode        = "follow"      # follow | dark | light | auto
+source            = "custom"     # builtin | wallpaper | community | custom
+builtin           = "Noctalia"    # bundled palette name
+# community_palette = "Oxocarbon"   # community palette name when source = "community"
+custom_palette    = "retro-82"   # file name (without .json) when source = "custom"
+wallpaper_scheme  = "m3-content"  # generator used when source = "wallpaper"
+pure_black_dark   = false         # replace dark-mode backgrounds with pure black
+
+[theme.templates]
+enable_community_templates = true
+community_ids = ["claude-code", "codex", "discord", "neovim", "rofi", "fastfetch", "lazygit", "tmux", "herdr", "obsidian", "pywalfox-beta4"]
+
+
+[theme.templates.user.terminal-sequences]
+input_path = '~/.config/noctalia/templates/terminal-sequences'
+output_path = '~/.cache/terminal-sequences'
+post_hook = 'tee /dev/pts/[0-9]* < ~/.cache/terminal-sequences'
+
+[wallpaper]
+directory = "~/.config/wallpapers"
+enabled   = true
+mode      = "center"
