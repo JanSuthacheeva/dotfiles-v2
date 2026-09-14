@@ -1,0 +1,12 @@
+vim.lsp.enable({
+  "clangd",
+  "lua_ls",
+  "intelephense",
+  "pyright",
+  "tailwindcss",
+  "gopls",
+  "html",
+  "ts_ls",
+  "sourcekit",
+  "rust_analyzer"
+})
