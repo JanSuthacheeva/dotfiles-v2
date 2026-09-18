@@ -6,7 +6,8 @@ vim.pack.add({
   { src = "https://github.com/vim-test/vim-test" },
   { src = "https://github.com/nvim-lualine/lualine.nvim" },
   { src = "https://github.com/rust-lang/rust.vim" },
-  { src = "https://github.com/RRethy/base16-nvim" }
+  { src = "https://github.com/RRethy/base16-nvim" },
+  { src = "https://github.com/obsidian-nvim/obsidian.nvim" }
 })
 
 
@@ -37,6 +38,18 @@ require "nvim-treesitter".setup({
     end
 })
 
+require("obsidian").setup {
+  legacy_commands = false,
+  picker = {
+    name = "mini.pick",
+  },
+  workspaces = {
+    {
+      name = "no-ai",
+      path = "~/no-ai",
+    },
+  }
+}
 -- require "nvim-treesitter.configs".setup({
 --   highlight = {
 --     enable = true,
